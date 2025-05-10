@@ -119,7 +119,6 @@ class ForegroundService : Service() {
             .setContentText(message)
             .build()
 
-
         startForeground(1, notification)
         println("-------------------------- startForegroundServiceWithNotification")
     }
