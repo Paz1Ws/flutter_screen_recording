@@ -1,7 +1,6 @@
 //import 'file:D:/Workspace/flutter_screen_recording/flutter_screen_recording_platform_interface/lib/flutter_screen_recording_platform_interface.dart';
 import 'dart:async';
 import 'dart:io';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter_foreground_task/flutter_foreground_task.dart';
 import 'package:flutter_screen_recording_platform_interface/flutter_screen_recording_platform_interface.dart';
@@ -83,18 +82,14 @@ class FlutterScreenRecording {
             channelDescription: messageNotification,
             channelImportance: NotificationChannelImportance.LOW,
             priority: NotificationPriority.LOW,
-            // iconData: const NotificationIconData(
-            //   resType: ResourceType.mipmap,
-            //   resPrefix: ResourcePrefix.ic,
-            //   name: 'launcher',
-            // ),
+         
           ),
           iosNotificationOptions: const IOSNotificationOptions(
             showNotification: true,
             playSound: false,
           ),
           foregroundTaskOptions: ForegroundTaskOptions(
-            eventAction: ForegroundTaskEventAction.nothing(),
+             eventAction: ForegroundTaskEventAction.nothing(),
             autoRunOnBoot: true,
             allowWifiLock: true,
           ),
