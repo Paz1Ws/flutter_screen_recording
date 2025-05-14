@@ -86,7 +86,7 @@ class FlutterScreenRecording {
             playSound: false,
           ),
           foregroundTaskOptions: ForegroundTaskOptions(
-            eventAction: ForegroundTaskEventAction.nothing(),
+            eventAction: ForegroundTaskEventAction.once(),
             autoRunOnBoot: true,
             allowWifiLock: true,
           ),
